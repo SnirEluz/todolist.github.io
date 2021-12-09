@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>2DOList</title>
+    <script src="https://kit.fontawesome.com/a077af4244.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="mainlogo">
+                <img class="logo" src="check.png" alt="">
+                <h1>2DOList</h1>
+            </div>
+            <div class="subheader">
+                <h2>My Check List</h2>
+            </div>
+        </div>
+        <div class="newtask">
+            <form>
+                <div class="left">
+                    <div class="maintext">
+                        <p>Main Text</p>
+                        <img class="cleartext" src="002-eraser.png" alt="">
+                        <textarea class="inputText" cols="40" rows="5" placeholder="Write Here Your Task" required></textarea>
+                    </div>
+                    <div class="timing">
+                        <div class="date">
+                            <p>Date</p>
+                            <input class="inputDate" type="date" min="2020-11-09" max="2150-12-30" required>
+                        </div>
+                        <div class="time">
+                            <p>Time</p>
+                            <input class="inputTime" type="time" required>
+                        </div>
+                    </div>
+                    <div class="optional">
+                        <label class="containerr">
+                            <input type="checkbox" class="checkbox" value="false">
+                          </label>
+                        <p>Mark Is Important ( optional )</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="clear">
+                        <p>Clear Your Task</p>
+                        <button class="btnClear"> Clear <img src="002-eraser.png" alt=""></button>
+                    </div>
+                    <div class="add">
+                        <p>Add Task</p>
+                        <button class="btnAdd"> Add <img src="001-add.png" alt=""></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="maintask">
+            <div class="numoflist">
+                <div class="clearAllTask">
+                    <p class="clearAllTask">Remove All</p>
+                </div>
+                <img src="number-list.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>
